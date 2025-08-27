@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Joy Seno</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="/static/css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="/static/images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="/static/css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="/static/https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- fonts -->
+      <link href="/static/https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+      <!-- font awesome css -->
+      <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+      <style>
+         .about_img {
+    width: 100%;
+    overflow: hidden; /* ensure image doesn't overflow */
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.about_img img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+/* Hover effect */
+.about_img:hover img {
+    transform: scale(1.1) rotate(3deg); /* zoom + slight rotate */
+    filter: brightness(1.2) contrast(1.1); /* bright and contrast effect */
+}    
+    /* Rounded buttons */
+    .circle-btn {
+      width: 80px;          /* thoda chote */
+      height: 40px;         /* height kam karke oval banaya */
+      border-radius: 20px;  /* fully circular nahi, rounded edges */
+      font-size: 1rem;
+      text-align: center;
+      line-height: 40px;
+      font-weight: bold;
+      transition: all 0.4s ease;
+      cursor: pointer;
+      margin: 10px;
+      position: relative;
+      overflow: hidden;
+      border: none;
+    }
+
+    /* Gradient backgrounds */
+    .btn-decor1 {
+      background: linear-gradient(45deg, #ff6a00, #ee0979);
+      color: white;
+    }
+
+    .btn-decor2 {
+      background: linear-gradient(45deg, #42e695, #3bb2b8);
+      color: white;
+    }
+
+    /* Hover effect */
+    .circle-btn:hover {
+      transform: scale(1.1) rotate(5deg);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    /* Decorative ripple effect */
+    .circle-btn::after {
+      content: "";
+      position: absolute;
+      width: 300%;
+      height: 300%;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      transition: transform 0.5s, opacity 0.5s;
+    }
+
+    .circle-btn:hover::after {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0;
+    }        
+.banner_taital_main {
+    text-align: center;
+    margin-top: 100px; /* original position */
+}
+
+/* Common animation for both texts */
+.banner_text, .banner_taital {
+    opacity: 0; /* initially invisible */
+    animation: fadeLoop 4s ease-in-out infinite;
+}
+
+/* Second line appears slightly after first */
+.banner_taital {
+    animation-delay: 2s;
+}
+
+@keyframes fadeLoop {
+    0% { opacity: 0; }
+    25% { opacity: 1; }
+    75% { opacity: 1; }
+    100% { opacity: 0; }
+}                                                  
+      </style>
+   </head>
+   <body>
+      <!-- header section start -->
+      <div class="header_section">
+         <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <div class="logo"><a href="index.html"><img src="/static/images/logo.png"></a></div>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item">
+                        <a class="nav-link" href="#index">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Projects</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#service">Service</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#certifications">Certifications</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+         <!-- banner section start -->
+         <div id='index' class="banner_section layout_padding">
+            <section class="slide-wrapper">
+               <div class="container-fluid">
+                  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                     <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                     </ol>
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <div class="container-fluid">
+                              <div class="row">
+                                 <div class="col-md-6">
+                                    <div class="banner_taital_main">
+                                       <h3 class="banner_text"><span style="color:red; font-size: 40px; font-family:sans-serif;">Hello</span> I Am <br>Brajmohan</h3>
+                                       <h1 class="banner_taital">Data Analyst</h1>
+                                       <div class="container text-center mt-5">
+                                     <div class="container text-center mt-5">
+                                       <div class="row justify-content-center">
+                                         <div class="col-auto">
+                                           <a href="#contact"><button class="circle-btn btn-decor1">Contact</button>
+                                         </div></a>
+                                         <a href="{% url 'download_resume' %}"
+                                         ><div class="col-auto">
+                                           <button class="circle-btn btn-decor2">CV view</button>
+                                         </div></a>
+                                       </div>
+                                     </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <div class="social_icon">
+                                       <ul>
+                                          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container-fluid">
+                              <div class="row">
+                                 <div class="col-md-6">
+                                    <div class="banner_taital_main">
+                                       <h3 class="banner_text">Hello Am <br>Brajmohan</h3>
+                                       <h1 class="banner_taital">UI/UX Designer</h1>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <div class="social_icon">
+                                       <ul>
+                                          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container-fluid">
+                              <div class="row">
+                                 <div class="col-md-6">
+                                    <div class="banner_taital_main">
+                                       <h3 class="banner_text">Hello Am <br>Brajmohan</h3>
+                                       <h1 class="banner_taital">UI/UX Designer</h1>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <div class="social_icon">
+                                       <ul>
+                                          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container-fluid">
+                              <div class="row">
+                                 <div class="col-md-6">
+                                    <div class="banner_taital_main">
+                                       <h3 class="banner_text">Hello Am <br>Brajmohan</h3>
+                                       <h1 class="banner_taital">UI/UX Designer</h1>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <div class="social_icon">
+                                       <ul>
+                                          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <div class="container">
+               <div class="video_bt">
+                  
+               </div>
+            </div>
+         </div>
+         <!-- banner section end -->
+      </div>
+      <!-- header section end -->
+<div id="about" class="about_section layout_padding">
+   <div class="container">
+      <div class="row align-items-center">         
+         
+         <!-- Left Side Image -->
+         <div class="col-lg-6 col-md-12 mb-4">
+            <div class="about_img">
+               <img src="/static/images/rish.jpg" alt="My Photo" class="img-fluid rounded shadow">
+            </div>
+         </div>
+         
+         <!-- Right Side Content -->
+         <div class="col-lg-6 col-md-12">
+            <div class="about_content">
+               <h1 class="about_title">About <span style="color:#ff6600;">Me</span></h1>
+               <p class="about_text">
+                  I have completed my <b>B.Tech in Computer Science</b> 
+                  and currently I am working as a <b>Data Analyst</b> 
+                  at <b>OVO Trip Company</b>.  
+                  I am passionate about technology, problem-solving, 
+                  and building creative projects.
+               </p>
+               <div class="readmore_bt">
+                  <a href="{% url 'aboutmore' %}">More About Me</a>
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </div>
+</div>
+
+         <!-- about section start -->
+         <div id="service" class="services_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <h1 class="services_taital mt-5">My <span class="portfolio_taital_1">Skills</span></h1>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="services_section_2">
+               <div class="row">
+                  <div class="col-lg-3 col-sm-6">
+                     <div class="box_main ">
+                        <div class="app_icon"><img src="/static/images/icon-1.png"></div>
+                        <div class="app_icon_1"><img src="/static/images/icon-1.png"></div>
+                        <h4 class="services_text active">Data Analytics</h4>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                     <div class="box_main ">
+                        <div class="app_icon"><img src="/static/images/icon-2.png"></div>
+                        <div class="app_icon_1"><img src="/static/images/icon-6.png"></div>
+                        <h4 class="services_text">Data Visualization</h4>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                     <div class="box_main ">
+                        <div class="app_icon"><img src="/static/images/icon-3.png"></div>
+                        <div class="app_icon_1"><img src="/static/images/icon-7.png"></div>
+                        <h4 class="services_text">Web Designing</h4>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                     <div class="box_main ">
+                        <div class="app_icon"><img src="/static/images/icon-4.png"></div>
+                        <div class="app_icon_1"><img src="/static/images/icon-8.png"></div>
+                        <h4 class="services_text">Machine Learning</h4>
+                     </div>
+                  </div>
+               </div>
+               <div class="readmore_bt"><a href="{% url 'Skills' %}">Read More</a></div>
+            </div>
+         </div>
+      </div>
+          <!-- about section end -->
+      <!-- services section end -->
+      <!-- portfolio section start -->
+      <div id="portfolio" class="portfolio_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <h1 class="portfolio_taital">My <span class="portfolio_taital_1">Portfolio/Projects</span></h1>
+               </div>
+            </div>
+            <div class="portfolio_section">
+               <div class="portfolio_section_2">
+                  <div class="row">
+                     <div class="col-md-8">
+                        <div class="container_main">
+                           <img src="/static/images/voables.png" alt="" class="image">
+                           <div class="overlay">
+                              <div class="text">
+                                 <div class="btn_main">
+                                    <div class="buy_bt"><a href="{% url 'projects' %}">click Website projects</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="/static/images/dash1.avif" alt="" class="image">
+                           <div class="overlay">
+                              <div class="text">
+                                 <div class="btn_main">
+                                    <div class="buy_bt"><a href="{% url 'projects' %}">Click Dashboard</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="portfolio_section_2">
+                  <div class="row">
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="/static/images/img-3.png" alt="" class="image">
+                           <div class="overlay">
+                              <div class="text">
+                                 <div class="btn_main">
+                                    <div class="buy_bt"><a href="{% url 'projects' %}">Click Sales analyse</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="/static/images/img-4.png" alt="" class="image">
+                           <div class="overlay">
+                              <div class="text">
+                                 <div class="btn_main">
+                                    <div class="buy_bt"><a href="{% url 'projects' %}">Click EDA project</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="/static/images/img-5.png" alt="" class="image">
+                           <div class="overlay">
+                              <div class="text">
+                                 <div class="btn_main">
+                                    <div class="buy_bt"><a href="{% url 'projects' %}">Customer Churn Analysis</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="seemore_bt"><a href="{% url 'projects' %}">See More</a></div>
+         </div>
+      </div>
+      <!-- portfolio section end -->
+      <!-- blog section start -->
+      <div id="blog" class="blog_section" layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <h1 class="blog_taital">My <span class="blog_taital_1">Blog</span></h1>
+                  <p class="blog_text">upidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+               </div>
+            </div>
+         </div>
+         <div class="blog_section_2">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-4">
+                     <a href="{% url 'hobbies'%}"><div class="blog_box">
+                        <div class="blog_img">
+                           <h4 class="date_text"></h4>
+                           <h4 class="prep_text text-dark">Activites / Hobbies </h4>
+                        </div>
+                        <p class="lorem_text">Hobbies are the windows to creativity and peace of mind</p>
+                     </div>
+                  </a>
+                  </div>
+                  <div class="col-md-4">
+                    
+                  </a>
+                  </div>
+                  <div class="col-md-4">
+                     <a href="{% url 'childhood'%}">
+                     <div class="blog_box">
+                        <div class="blog_img_2">
+                           <h4 class="date_text"></h4>
+                           <h4 class="prep_text text-light">ChildHood</h4>
+                        </div>
+                        <p class="lorem_text">Childhood is the most beautiful of all life’s seasons</p>
+                     </div>
+                  </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- blog section end -->
+<!-- certifications section start -->
+      <div id="certifications" class="certifications layout_padding mt-5">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <h1 class="blog_taital">My <span class="blog_taital_1">Certificates</span></h1>
+                  <h6 class="blog_text text-dark fw-bold">These certificates reflect my dedication to continuous growth and real-world experience.""</h6>
+               </div>
+            </div>
+         </div>
+         <div class="blog_section_2">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-4">
+                     <div class="blog_box">
+                        <div class="blog_imgd">
+                           <h4 class="date_text">15 April 2025</h4>
+                           <h4 class="prep_text">Data Science</h4>
+                        </div>
+                        <p class="lorem_text">“Certified in Data Science with hands-on projects and practical skills.”</p>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="blog_box">
+                        <div class="blog_img_2i">
+                           <h4 class="date_text">May 2024</h4>
+                           <h4 class="prep_text">Internship</h4>
+                        </div>
+                        <p class="lorem_text">“Completed internship with hands-on to
+Gained experience and professional skills.”</p>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="blog_box">
+                        <div class="blog_box_3">
+                           <div class="blog_img_3i">
+                              <h4 class="date_text">20 may</h4>
+                              <h4 class="prep_text">Project Training </h4>
+                           </div>
+                           <p class="lorem_text">“Completed project training with  problem solving and practical implementation.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="readmore_bt_1"><a href="{% url 'certifications' %}">Read More</a></div>
+            </div>
+         </div>
+      </div>
+
+<!-- certifications end -->
+
+      <!-- contact section start -->
+      <div id="contact" class="contact_section layout_padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 class="contact_taital">
+          My <span class="contact_taital_1">Contact</span>
+        </h1>
+      </div>
+    </div>
+
+    <div class="contact_section_2">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mail_section_1">
+            <form action="{% url 'sendmail' %}" method="post">
+              {% csrf_token %}
+              <input type="text" class="mail_text" placeholder="Your Name" name="name" required>
+              <input type="email" class="mail_text" placeholder="Your Email" name="email" required>
+              <input type="text" class="mail_text" placeholder="Your Phone" name="phone">
+              <textarea class="massage-bt" placeholder="Your Message" rows="5" id="comment" name="message" required></textarea>
+
+              <div class="send_bt">
+                <button type="submit" class="btn btn-primary">Send Now</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+      <!-- contact section end -->
+      <!-- project box section start -->
+      <div class="project_box">
+         <div class="container">
+            <div class="project_main">
+               <h1 class="hire_text">Hire me for your projects</h1>
+               <div class="callnow_bt"><a href="#">Call Now</a></div>
+            </div>
+         </div>
+      </div>
+      <!-- project box section end -->
+      <!-- footer section start -->
+      <div class="footer_section">
+         <div class="container">
+            <div class="location_text">
+               <ul>
+                  <li>
+                     <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!-- footer section end -->
+      <!-- copyright section start -->
+      <div class="copyright_section">
+         <div class="container">
+            <p class="copyright_text">2020 All Rights Reserved. Design by <a href="/static/https://html.design">Free Html Templates</a> Distribution by <a href="/static/https://themewagon.com">ThemeWagon</a></p>
+         </div>
+      </div>
+      <!-- copyright section end -->
+      <!-- Javascript files-->
+      <script src="/static/js/jquery.min.js"></script>
+      <script src="/static/js/popper.min.js"></script>
+      <script src="/static/js/bootstrap.bundle.min.js"></script>
+      <script src="/static/js/jquery-3.0.0.min.js"></script>
+      <script src="/static/js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="/static/js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="/static/js/custom.js"></script>
+      <script>
+         $('#myCarousel').carousel({
+            interval: false
+         });
+         
+         //scroll slides on swipe for touch enabled devices
+         
+         $("#myCarousel").on("touchstart", function(event){
+         
+            var yClick = event.originalEvent.touches[0].pageY;
+            $(this).one("touchmove", function(event){
+         
+                var yMove = event.originalEvent.touches[0].pageY;
+                if( Math.floor(yClick - yMove) > 1 ){
+                    $(".carousel").carousel('next');
+                }
+                else if( Math.floor(yClick - yMove) < -1 ){
+                    $(".carousel").carousel('prev');
+                }
+            });
+            $(".carousel").on("touchend", function(){
+                $(this).off("touchmove");
+            });
+         });
+         
+      </script>
+   </body>
+</html>

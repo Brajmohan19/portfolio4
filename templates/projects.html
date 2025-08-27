@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rishav Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth; 
+    }
+    header {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                  url("/static/images/creativ.jpg") center/cover no-repeat;
+      color: white;
+    }
+    .hover-effect {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+.hover-effect:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4); 
+  cursor: pointer; 
+}
+.hover-title {
+  transition: transform 0.3s ease, color 0.3s ease, font-weight 0.3s ease;
+}
+
+.hover-title:hover {
+  transform: scale(1.2);       
+  color: #ff5733 !important;  
+  font-weight: 700;          
+  cursor: pointer;
+}
+.hover-img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hover-img:hover {
+  transform: scale(1.1) rotate(3deg); /* thoda zoom + rotate */
+  box-shadow: 0 12px 25px rgba(0,0,0,0.5); /* shadow strong ho jaaye */
+  cursor: pointer;
+}
+.hover-img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: float 3s ease-in-out infinite alternate; /* floating animation */
+}
+
+.hover-img:hover {
+  transform: scale(1.1) rotate(-3deg); /* zoom + slight rotate */
+  box-shadow: 0 15px 30px rgba(0,0,0,0.6); /* strong shadow */
+  cursor: pointer;
+}
+
+/* Floating animation */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+
+  </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<header id="home">
+  <div class="container">
+    <h1 class="display-4 fw-bold"><span class="text-warning">Portfolio</span></h1>
+    <p class="lead fw-bold">Projects</p>
+  </div>
+</header>
+
+<!-- About Section -->
+<section id="about" class="py-5 bg-light">
+  <div class="container">
+
+    <div class="row align-items-center">
+      <!-- Left Image -->
+<div class="col-lg-5 col-md-12 mb-4 gap-3">
+  <img src="/static/images/voables.png" class="img-fluid rounded shadow hover-effect mt-5" alt="My Photo">
+</div>
+      <!-- Right Content -->
+      <div class="col-lg-7 col-md-12">
+        <h2 class="text-center text-warning hover-title fs-1 fw-bold ms-5 mb-5">Voables Website</h2>
+        <p>
+I am currently working on a website called Voables.com, designed specifically for a business consultancy. The frontend is built using HTML, CSS, and Tailwind, with JavaScript adding interactive features to enhance user experience. For the backend, I am using Django to manage data, handle server-side logic, and integrate dynamic content. Currently, the frontend design is complete, and I am actively working on the backend development to ensure all features function smoothly. This project aims to provide a professional and responsive platform for clients seeking business consultancy services, and it is still a work in progress as I continue to improve both design and functionality.
+
+        </p><br><a href="https://github.com/Brajmohan19/Powerbi_Dashboard_Mobiles_Sales"><button type="button" class="btn btn-dark">Currently Working</button></a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="about" class="py-5 bg-light">
+  <div class="container">
+
+    <div class="row align-items-center">
+      <!-- Left Image -->
+<section id="about" class="about_section layout_padding">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left Content -->
+      <div class="col-lg-7 col-md-12 order-lg-1 order-2">
+        <h2 class="text-center text-warning hover-title fs-1 fw-bold ms-5 mb-5">Analyze Mobiles Sales Data Using Jupiter Notebook </h2>
+        <p>
+In this project, I performed a comprehensive analysis of mobile sales data using Python in Jupyter Notebook to uncover trends, patterns, and business insights. The dataset included details such as brand names, model types, price ranges, sales volumes, customer ratings, and regional performance. I started by cleaning and preprocessing the data using Pandas and NumPy to remove inconsistencies, handle missing values, and convert data types for analysis. Through Exploratory Data Analysis (EDA), I used Matplotlib and Seaborn to create visualizations like bar charts, pie charts, and heatmaps, which revealed key insights — such as which brands dominated sales, how pricing affected customer ratings, and which regions showed the highest demand. 
+
+        </p>
+        <p>
+I also segmented the data to compare budget vs premium phones and analyzed seasonal trends in sales. Based on the findings, I provided actionable recommendations like optimizing inventory for high-demand regions, focusing marketing efforts on top-performing models, and adjusting pricing strategies to boost customer satisfaction. This project helped me strengthen my skills in data cleaning, visualization, and storytelling, while also demonstrating how data science can drive smarter business decisions in the retail and electronics sector.
+
+
+
+
+        </p>
+        <p>
+Customer feedback is captured through rating status, where most users rated their experience as Excellent or Good. The payment method breakdown indicates that Credit Card is the most preferred option, followed by Debit Card and Cash. Model-wise sales analysis shows iPhone XS and iPhone 11 as top performers, while weekday-wise sales data reveals that Saturdays generate the highest revenue. Overall, this dashboard enables data-driven decision-making by offering insights into regional performance, customer behavior, and product trends — making it a powerful tool for business strategy and planning.
+
+
+        </p><br>        </p><br><a href="https://github.com/Brajmohan19/Powerbi_Dashboard_Mobiles_Sales"><button type="button" class="btn btn-dark">View The Project Click On Me</button></a>
+      </div>
+
+      <!-- Right Image -->
+      <div class="col-lg-5 col-md-12 mb-4 order-lg-2 order-1">
+        <img src="/static/images/collage.png" class="img-fluid rounded shadow hover-effect" alt="My Photo">
+      </div>
+    </div>
+  </div>
+</section>
+<section id="about" class="py-5 bg-light">
+  <div class="container">
+
+    <div class="row align-items-center">
+      <!-- Left Image -->
+<div class="col-lg-5 col-md-12 mb-4 gap-3">
+  <img src="/static/images/Dashboard Preview.jpg" class="img-fluid rounded shadow hover-effect" alt="My Photo">
+</div>
+      <!-- Right Content -->
+      <div class="col-lg-7 col-md-12">
+        <h2 class="text-center text-warning hover-title fs-1 fw-bold ms-5 mb-5">POWERBI DASHBOARD Mobile Sales</h2>
+        <p>
+This mobile sales dashboard provides a comprehensive overview of sales performance across India. It highlights key metrics such as total revenue of ₹769 million, 19,000 units sold, 4,000 transactions, and an average selling price of ₹40.11K. The interactive filters at the top 
+
+        </p>
+        <p>
+allow users to analyze data by mobile model, payment method, and brand, making the dashboard dynamic and user-friendly. A map visualization shows city-wise sales distribution, with Mumbai, Delhi, and Bangalore emerging as top contributors. Monthly quantity trends reveal seasonal fluctuations, with March recording the highest sales volume.</p>
+        <p>
+Customer feedback is captured through rating status, where most users rated their experience as Excellent or Good. The payment method breakdown indicates that Credit Card is the most preferred option, followed by Debit Card and Cash. Model-wise sales analysis shows iPhone XS and iPhone 11 as top performers, while weekday-wise sales data reveals that Saturdays generate the highest revenue. Overall, this dashboard enables data-driven decision-making by offering insights into regional performance, customer behavior, and product trends — making it a powerful tool for business strategy and planning.</p><br>
+<a href="https://github.com/Brajmohan19/Powerbi_Dashboard_Mobiles_Sales"><button type="button" class="btn btn-dark">View Project To Click On Me</button></a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="about" class="about_section layout_padding">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left Content -->
+      <div class="col-lg-7 col-md-12 order-lg-1 order-2">
+        <h2 class="text-center text-warning hover-title fs-1 fw-bold ms-5 mb-5">Customer Churn project Using Jupiter Notebook</h2>
+ I built predictive models using machine learning algorithms such as Logistic Regression, Decision Trees, and Random Forest from Scikit-learn. Among these, Random Forest gave the highest accuracy and better precision-recall balance. Feature importance analysis helped identify top drivers of churn, such as short tenure, high monthly charges, and customers on month-to-month contracts. To make the insights more actionable, I created interactive visualizations and bar 
+        <p>
+ I built predictive models using machine learning algorithms such as Logistic Regression, Decision Trees, and Random Forest from Scikit-learn. Among these, Random Forest gave the highest accuracy and better precision-recall balance. Feature importance analysis helped identify top drivers of churn, such as short tenure, high monthly charges, and customers on month-to-month contracts. To make the insights more actionable, I created interactive visualizations and bar 
+        </p>
+        <p>
+charts showing churn distribution across different customer segments. The final output provided clear recommendations for the business — such as offering loyalty benefits to long-term customers, promoting annual contracts, and improving service quality for high-risk segments. This project not only strengthened my skills in Python, data visualization, and machine learning, but also taught me how to extract actionable business insights from real-world data.
+        </p><br><a href="https://github.com/Brajmohan19/telecom_Customer_churn"><button type="button" class="btn btn-dark">View Project To Click On Me</button></a>
+      </div>
+
+      <!-- Right Image -->
+      <div class="col-lg-5 col-md-12 mb-4 order-lg-2 order-1">
+        <img src="/static/images/photocol.png" class="img-fluid rounded shadow hover-effect" alt="My Photo">
+      </div>
+    </div>
+  </div>
+</section>
+<section id="about" class="py-5 bg-light">
+  <div class="container">
+
+    <div class="row align-items-center">
+      <!-- Left Image -->
+<div class="col-lg-5 col-md-12 mb-4 gap-3">
+  <img src="/static/images/eda.jpeg " class="img-fluid rounded shadow hover-effect" alt="My Photo">
+</div>
+      <!-- Right Content -->
+      <div class="col-lg-7 col-md-12">
+        <h2 class="text-center text-warning hover-title fs-1 fw-bold ms-5 mb-5">Amazon prime EDA project</h2>
+        <p>
+In this Amazon Prime EDA project, the initial step involved handling missing data to ensure analytical accuracy. The 'IMDb Rating' column, which contained null values, was imputed using the mode — the most frequently occurring rating — to preserve the central tendency of viewer scores. Simultaneously, the 'Plot' column’s missing entries were replaced with the placeholder text 'No Data', maintaining consistency in textual fields and avoiding null-related errors during analysis. After these cleaning steps, the number of missing values in each column was printed to confirm that the dataset was now complete and ready for further exploration. Next, the data was grouped by 'Movie Name' to calculate the mean IMDb rating, allowing us to identify the top 10 highest-
+        </p>
+        <p>
+rated titles based on aggregated viewer feedback. To focus the analysis on a specific era, the dataset was filtered to include only movies released between 1961 and 2000 — a period rich in cinematic evolution. Finally, a bar chart was plotted to visualize IMDb ratings, where movies released before 2000 were represented with dark blue bars, while those released beyond 2000 were shown in a contrasting color. This color-coded visualization helped highlight temporal trends in movie ratings and made it easier to compare content performance across different decades.
+
+
+</p><br>
+<a href="https://github.com/Brajmohan19/Powerbi_Dashboard_Mobiles_Sales"><button type="button" class="btn btn-dark">View Project To Click On Me</button></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 mt-5">
+  <p class="mb-0">© 2025 Rishav | All Rights Reserved</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

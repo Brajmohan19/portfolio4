@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+    .about_section {
+      padding: 60px 0;
+    }
+    .about_title {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    .about_text {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-top: 20px;
+    }
+    .about_img img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    }
+    .readmore_bt a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 25px;
+      background-color: #ff6600;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+    .readmore_bt a:hover {
+      background-color: #e55b00;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- About Section -->
+  <div id="about" class="about_section layout_padding">
+    <div class="container">
+      <div class="row align-items-center">         
+        
+        <!-- Left Side Image -->
+        <div class="col-lg-6 col-md-12 mb-4">
+          <div class="about_img">
+            <img src="/static/images/rish.jpg" alt="My Photo" class="img-fluid rounded shadow">
+          </div>
+        </div>
+        
+        <!-- Right Side Content -->
+        <div class="col-lg-6 col-md-12">
+          <div class="about_content">
+            <h1 class="about_title">About <span style="color:#ff6600;">Me</span></h1>
+            <p class="about_text">
+              I have completed my <b>B.Tech in Computer Science</b> 
+              and currently I am working as a <b>Data Analyst</b> 
+              at <b>OVO Trip Company</b>.  
+              I am passionate about technology, problem-solving, 
+              and building creative projects.
+            </p>
+            <div class="readmore_bt">
+              <a href="{% url 'home' %}">Back to Home</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

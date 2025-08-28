@@ -83,8 +83,8 @@ import os
 
 def download_resume(request):
     # Static folder ke andar path
-    file_path = os.path.join(settings.BASE_DIR, 'C:/Users/Rishav Parihar/Desktop/port/portfolio/static/files/BRAJ.CV.pdf')
-    file_name = 'BRAJ.CV.pdf'  # Browser me jo naam dikhana hai
+    file_path = os.path.join(settings.BASE_DIR, 'C:/Users/Rishav Parihar/Desktop/port/portfolio/static/files/Brajmohan.pdf')
+    file_name = 'Brajmohan.pdf'  # Browser me jo naam dikhana hai
 
     # Seedha file serve karenge
     response = FileResponse(open(file_path, 'rb'))

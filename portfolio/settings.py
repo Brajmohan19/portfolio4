@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-d5(k)i8#u)8o2q9977bg2d=dt*$@^5mg!s0ljoi67bh=@v1^!u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -50,13 +50,14 @@ MESSAGE_TAGS = {
 }
 
 MIDDLEWARE = [
-    'whitenoise.middleware.Whitenoise.Middleware',
+    'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.Whitenoise.Middleware',
 ]
 
 ROOT_URLCONF = 'portfolio.urls'
